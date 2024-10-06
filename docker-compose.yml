@@ -1,0 +1,12 @@
+services:
+
+  gems-db:
+    image: postgres
+    container_name: gems-db
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: user
+      POSTGRES_DB: gems_db
+
+    ports:
+      - 5432:5432
